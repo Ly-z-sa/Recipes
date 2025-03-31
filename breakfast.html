@@ -12,62 +12,103 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html" class="active">Breakfast</a></li>
                 <li><a href="lunch.html">Lunch</a></li>
                 <li><a href="snacks.html">Snacks</a></li>
                 <li><a href="desserts.html">Desserts</a></li>
             </ul>
         </nav>
     </header>
-    <main class="recipe-container">
-        <section class="recipe">
-            <h2>Pancakes</h2>
-            <img src="images/pancakes.jpg" alt="Pancakes">
-            <p>Fluffy pancakes with syrup.</p>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>1 cup flour</li>
-                <li>1 tbsp sugar</li>
-                <li>1 tsp baking powder</li>
-                <li>1/2 tsp salt</li>
-                <li>1 cup milk</li>
-                <li>1 egg</li>
-                <li>2 tbsp melted butter</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Mix dry ingredients in a bowl.</li>
-                <li>Whisk in milk, egg, and melted butter.</li>
-                <li>Heat a pan and pour batter in small circles.</li>
-                <li>Cook until bubbles form, then flip and cook the other side.</li>
-                <li>Serve with syrup and toppings of choice.</li>
-            </ol>
+    <main>
+        <section class="intro">
+            <h2>Start Your Day Right</h2>
+            <p>Discover delicious breakfast recipes to energize your morning.</p>
         </section>
-        
         <section class="recipe">
-            <h2>Omelette</h2>
-            <img src="images/omelette.jpg" alt="Omelette">
-            <p>A delicious omelette with vegetables.</p>
-            <h3>Ingredients:</h3>
+            <h2>Delicious Pancake Recipe</h2>
+            <h3>Ingredients</h3>
             <ul>
-                <li>2 eggs</li>
-                <li>1/4 cup milk</li>
-                <li>Salt and pepper to taste</li>
-                <li>1/4 cup chopped bell peppers</li>
-                <li>1/4 cup chopped onions</li>
-                <li>1/4 cup shredded cheese</li>
+                <li>1 cup all-purpose flour</li>
+                <li>2 tablespoons sugar</li>
+                <li>1 teaspoon baking powder</li>
+                <li>1/2 teaspoon baking soda</li>
+                <li>1/4 teaspoon salt</li>
+                <li>3/4 cup milk</li>
+                <li>1 egg</li>
+                <li>2 tablespoons melted butter</li>
+                <li>1 teaspoon vanilla extract</li>
             </ul>
-            <h3>Instructions:</h3>
+            <h3>Instructions</h3>
             <ol>
-                <li>Beat eggs with milk, salt, and pepper.</li>
-                <li>Heat a pan and pour in the egg mixture.</li>
-                <li>Add vegetables and cheese on top.</li>
-                <li>Cook until edges are set, then fold in half.</li>
-                <li>Serve hot.</li>
+                <li>In a bowl, mix the dry ingredients: flour, sugar, baking powder, baking soda, and salt.</li>
+                <li>In another bowl, whisk together milk, egg, melted butter, and vanilla extract.</li>
+                <li>Gradually add the wet ingredients to the dry ingredients and mix until smooth.</li>
+                <li>Heat a non-stick pan over medium heat and lightly grease it.</li>
+                <li>Pour 1/4 cup of batter onto the pan for each pancake.</li>
+                <li>Cook until bubbles form on the surface, then flip and cook the other side until golden brown.</li>
+                <li>Serve warm with your favorite toppings like syrup, fruits, or whipped cream.</li>
             </ol>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Delicious Recipes. All Rights Reserved.</p>
     </footer>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .intro {
+            margin: 20px;
+            font-size: 20px;
+        }
+        .recipe {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            text-align: left;
+        }
+        .recipe h2, .recipe h3 {
+            color: #ff6f61;
+        }
+        .recipe ul, .recipe ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </body>
 </html>
