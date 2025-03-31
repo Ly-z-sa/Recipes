@@ -199,4 +199,87 @@ footer p {
         display: block;
         margin: 5px 0;
     }
+
+    /* Adjust header layout */
+    .logo-container {
+        flex-direction: column; /* Stack logo and title vertically */
+        gap: 10px; /* Reduce spacing between logo and title */
+    }
+
+    .logo {
+        width: 40px; /* Make the logo smaller on mobile */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reduce font size for the title */
+    }
+
+    /* Adjust navigation for mobile */
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add spacing between links */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Reduce font size for links */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+    }
+
+    /* Adjust main content */
+    main {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .intro h2 {
+        font-size: 1.8rem; /* Reduce font size for headings */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Reduce font size for text */
+    }
+
+    /* Adjust recipe section */
+    .recipe {
+        padding: 15px; /* Reduce padding */
+        margin: 10px auto; /* Reduce margin */
+    }
+
+    .recipe h2 {
+        font-size: 1.5rem; /* Reduce font size for recipe titles */
+    }
+
+    .recipe h3 {
+        font-size: 1.2rem; /* Reduce font size for subheadings */
+    }
+
+    /* Adjust categories section */
+    .categories {
+        flex-direction: column; /* Stack categories vertically */
+        align-items: center;
+    }
+
+    .category {
+        max-width: 90%; /* Make categories take up more width */
+    }
+
+    .category img {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    .category h3 {
+        font-size: 1.2rem; /* Adjust font size for category titles */
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.8rem; /* Reduce footer font size */
+        padding: 8px 0; /* Adjust padding */
+    }
 }
