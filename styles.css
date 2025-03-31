@@ -202,8 +202,8 @@ footer p {
 
     /* Adjust header layout */
     .logo-container {
-        flex-direction: column; /* Stack logo and title vertically */
-        gap: 10px; /* Reduce spacing between logo and title */
+        flex-direction: row; /* Keep logo and title side by side */
+        gap: 10px; /* Adjust spacing between logo and title */
     }
 
     .logo {
@@ -225,11 +225,23 @@ footer p {
 
     nav ul li {
         margin: 5px 0; /* Add spacing between links */
+        width: 100%; /* Make each link take full width */
     }
 
     nav ul li a {
         font-size: 1rem; /* Reduce font size for links */
-        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        padding: 10px; /* Adjust padding for better spacing */
+        text-align: center; /* Center-align the text */
+        display: block; /* Ensure links take up the full width */
+        background-color: #ff6f61; /* Keep button background color */
+        border-radius: 5px; /* Keep rounded corners */
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: white; /* Change background on hover/active */
+        color: #ff6f61; /* Change text color on hover/active */
+        border: 2px solid #ff6f61; /* Add a border on hover/active */
     }
 
     /* Adjust main content */
