@@ -1,128 +1,106 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Delicious Recipes</h2>
+            <p>Explore our collection of tasty recipes organized into different categories.</p>
+        </section>
+        <section class="categories">
+            <div class="category">
+                <a href="breakfast.html"><img src="images/breakfast.jpg" alt="Breakfast"></a>
+                <h3><a href="breakfast.html">Breakfast Recipes</a></h3>
+            </div>
+            <div class="category">
+                <a href="lunch.html"><img src="images/lunch.jpg" alt="Lunch"></a>
+                <h3><a href="lunch.html">Lunch Recipes</a></h3>
+            </div>
+            <div class="category">
+                <a href="snacks.html"><img src="images/snacks.jpg" alt="Snacks"></a>
+                <h3><a href="snacks.html">Snack Recipes</a></h3>
+            </div>
+            <div class="category">
+                <a href="desserts.html"><img src="images/desserts.jpg" alt="Desserts"></a>
+                <h3><a href="desserts.html">Dessert Recipes</a></h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Delicious Recipes. All Rights Reserved.</p>
+    </footer>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff7043;
+            background-color: #ff6f61;
             color: white;
-            padding: 20px;
-            font-size: 24px;
+            padding: 20px 0;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .intro {
+            margin: 20px;
+            font-size: 20px;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
             padding: 20px;
         }
         .category {
-            margin-bottom: 40px;
-        }
-        .recipe {
             background: white;
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
         }
-        .recipe img {
+        .category img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
         }
-        h2 {
-            color: #ff7043;
-        }
-        .recipe-details {
-            margin-top: 10px;
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
-</head>
-<body>
-    <header>Delicious Recipes</header>
-    <div class="container">
-        <div class="category">
-            <h2>Breakfast</h2>
-            <div class="recipe">
-                <img src="" alt="Pancakes">
-                <h3>Pancakes</h3>
-                <p>Fluffy homemade pancakes with syrup.</p>
-                <div class="recipe-details">
-                    <strong>Ingredients:</strong>
-                    <ul>
-                        <li>1 cup flour</li>
-                        <li>1 tbsp sugar</li>
-                        <li>1 tsp baking powder</li>
-                        <li>1 egg</li>
-                        <li>1 cup milk</li>
-                        <li>2 tbsp melted butter</li>
-                    </ul>
-                    <strong>Instructions:</strong>
-                    <ol>
-                        <li>Mix dry ingredients in a bowl.</li>
-                        <li>Add wet ingredients and stir until smooth.</li>
-                        <li>Heat a pan and pour batter to form pancakes.</li>
-                        <li>Cook until bubbles form, then flip.</li>
-                        <li>Serve with syrup and toppings.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="recipe">
-                <img src="" alt="Omelette">
-                <h3>Omelette</h3>
-                <p>Classic omelette with cheese and vegetables.</p>
-                <div class="recipe-details">
-                    <strong>Ingredients:</strong>
-                    <ul>
-                        <li>2 eggs</li>
-                        <li>1/4 cup milk</li>
-                        <li>1/4 cup shredded cheese</li>
-                        <li>1/4 cup diced vegetables</li>
-                        <li>Salt and pepper to taste</li>
-                    </ul>
-                    <strong>Instructions:</strong>
-                    <ol>
-                        <li>Whisk eggs and milk in a bowl.</li>
-                        <li>Heat a pan and pour the mixture.</li>
-                        <li>Add cheese and vegetables on top.</li>
-                        <li>Cook until set, then fold and serve.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div class="category">
-            <h2>Lunch</h2>
-            <div class="recipe">
-                <img src="" alt="Grilled Chicken">
-                <h3>Grilled Chicken</h3>
-                <p>Juicy grilled chicken with herbs.</p>
-                <div class="recipe-details">
-                    <strong>Ingredients:</strong>
-                    <ul>
-<li>2 chicken breasts</li>
-                        <li>1 tbsp olive oil</li>
-                        <li>1 tsp garlic powder</li>
-                        <li>1 tsp paprika</li>
-                        <li>Salt and pepper to taste</li>
-                    </ul>
-                    <strong>Instructions:</strong>
-                    <ol>
-                        <li>Marinate chicken with spices and oil.</li>
-                        <li>Preheat grill and cook for 6-7 minutes per side.</li>
-                        <li>Let rest before serving.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
