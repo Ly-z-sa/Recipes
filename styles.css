@@ -9,50 +9,60 @@ body {
 }
 
 header {
-    background-color: #ff6f61;
+    background-color: rgba(255, 111, 97, 0.9); /* Semi-transparent background for blur effect */
     color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; /* Adjust padding for better alignment */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out logo/title and navigation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure the header stays above other content */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
 }
 
 /* Logo Styles */
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px; /* Space between logo and text */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center logo and title vertically */
+    justify-content: flex-start; /* Align logo and title to the left */
+    gap: 10px; /* Add space between the logo and the title */
 }
 
 .logo {
-    width: 50px; /* Adjust the size of the logo */
+    width: 40px; /* Adjust the size of the logo */
     height: auto;
     border-radius: 50%; /* Optional: Make the logo circular */
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Adjust font size for the title */
     margin: 0;
     color: white;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 15px; /* Space between navigation buttons */
     padding: 0;
-    margin: 10px 0 0;
+    margin: 0;
+    align-items: center; /* Center navigation items vertically */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
 /* Navigation Buttons */
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 15px; /* Add padding for button-like appearance */
+    font-size: 1rem; /* Adjust font size for links */
+    padding: 8px 12px; /* Adjust padding for button-like appearance */
     border: 2px solid transparent; /* Add a border for hover effect */
     border-radius: 5px; /* Rounded corners */
     background-color: #ff6f61; /* Button background color */
