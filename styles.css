@@ -221,7 +221,7 @@ footer p {
     nav ul {
         display: flex;
         flex-direction: row; /* Keep navigation links in a row */
-        flex-wrap: wrap; /* Allow wrapping if necessary */
+        flex-wrap: nowrap; /* Prevent wrapping to a new line */
         justify-content: flex-end; /* Align navigation to the right */
         gap: 5px; /* Add spacing between links */
         padding: 0;
@@ -233,11 +233,12 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Reduce font size for links */
-        padding: 5px 10px; /* Adjust padding for smaller buttons */
+        font-size: 0.8rem; /* Reduce font size for links */
+        padding: 5px 8px; /* Adjust padding for smaller buttons */
         text-align: center; /* Center-align the text */
         background-color: #ff6f61; /* Keep button background color */
         border-radius: 5px; /* Keep rounded corners */
+        white-space: nowrap; /* Prevent text from wrapping inside buttons */
     }
 
     nav ul li a:hover,
